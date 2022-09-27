@@ -324,7 +324,7 @@ input.password{
   text-decoration: none;
 }
 
-.container-register, .container-new-discipline {
+.container-register, .container-new-discipline, .container-create-class {
   display: flex;
   justify-content: center;
   height: 100vh;
@@ -332,18 +332,18 @@ input.password{
   margin-top: 5px;
 }
 
-.register, .new-discipline {
+.register, .new-discipline, .create-class {
   width: 450px;
   height: 500px;
   padding: 0;
   background-color: rgba(255,255,255,0.1);
-  -webkit-border-radius:10px;
+  -webkit-border-radius: 10px;
   -moz-border-radius:10px;
   border-radius: 10px;
   border: none;
 }
 
-.register form, .new-discipline form{
+.register form, .new-discipline form, .create-class form{
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -353,7 +353,7 @@ input.name{
   background-image: url(images/icone-usuario.png);  
 }
 
-.register h3, .new-discipline h3{
+.register h3, .new-discipline h3, .create-class h3{
   /* background-clip: text;
   -webkit-background-clip: text;  
   background-image: linear-gradient(118deg, rgba(192, 57, 43, 1) 0%, rgba(168, 62, 106, 1) 32%, rgba(142, 68, 173, 1) 100%);
@@ -365,7 +365,7 @@ input.name{
   justify-content: center;
 }
 
-.register input, .new-discipline input{
+.register input, .new-discipline input, .create-class input{
   height: 40px;
   width: 80%;
   font-size: 18px;
@@ -380,14 +380,14 @@ input.name{
   margin-left: 20px;
 }
 
-.register .div-submit, .new-discipline .div-submit {
+.register .div-submit, .new-discipline .div-submit , .create-class .div-submit{
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 20px;
 }
 
-.register .submit, .new-discipline .submit {
+.register .submit, .new-discipline .submit, .create-class .submit{
   height: 55px;
   width: 220px;
   border-radius: 10px;
@@ -403,13 +403,13 @@ input.name{
   /* margin-left: 40px; */
 }
 
-.register .submit:hover, .new-discipline .submit:hover {
+.register .submit:hover, .new-discipline .submit:hover, .create-class .submit:hover{
   transform: scale(1.1);
   transition: 0.5s ease-in-out;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
-.register a , .new-discipline a{
+.register a , .new-discipline a, .create-class a{
   font-weight: 600;
   font-size: 20px;
   color: #fff;
@@ -541,6 +541,111 @@ input.name{
 
 .container-presence {
   height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
+
+.container-presence h3 {
+  font-weight: 400;
+  font-size: 30px;
+  color: #f2f2f2;
+}
+
+.container-presence input {
+  height: 55px;
+  width: 280px;
+  font-family: 'COCOGOOSE', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: 10px;
+  border-radius: 5px;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
+.container-presence .ok-confirme-presence {
+  height: 50px;
+  width: 150px;
+  margin: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-family: 'COCOGOOSE', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  background: rgb(192, 57, 43);
+  background: linear-gradient(118deg, rgba(192, 57, 43, 1) 0%, rgba(168, 62, 106, 1) 32%, rgba(142, 68, 173, 1) 100%);
+}
+
+.container-presence .ok-confirme-presence:hover {
+  transform: scale(1.1);
+  transition: 0.5s ease-in-out;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.container-discipline {
+  height: 100vh;
+}
+
+.container-generate-code {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 200px;
+}
+
+.confirm-generate-code {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 500px;
+  height: 130px;
+  background-color: rgba(255,255,255,0.05);
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  border-radius: 10px;
+  border: none;
+  margin: 10px;
+  margin-top: -130px;
+  color: #f2f2f2;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.confirm-generate-code:hover{
+  background-color: rgba(255,255,255,0.2);
+  transform: scale(1.1);
+  transition: 0.5s ease-in-out;
+}
+
+.generated-code {  
+  height: 100px;
+  width: 400px;
+  font-family: 'COCOGOOSE', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  margin-bottom: 10px;
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 5px;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 
 
