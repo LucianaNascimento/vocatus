@@ -182,10 +182,17 @@ body {
 
 .register-button {
   height: 55px;
-  width: 180px;      
+  width: 200px;      
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
+  box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+  border: solid 3px transparent;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(118deg, rgba(192, 57, 43, 1) 0%, rgba(168, 62, 106, 1) 32%, rgba(142, 68, 173, 1) 100%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px rgba(12, 5, 34, 1) inset;
+  border-radius: 10px;
 }
 
 .register-button a{  
@@ -200,30 +207,9 @@ body {
   text-decoration: none;
 }
 
-
-.register-button a:hover{
-  background-clip: text;
-  -webkit-background-clip: text;  
-  background-image: linear-gradient(118deg, rgba(192, 57, 43, 1) 0%, rgba(168, 62, 106, 1) 32%, rgba(142, 68, 173, 1) 100%);
-  color: transparent;
+.register-button:hover {
+  transform: scale(1.1);
   transition: 0.5s ease-in-out;
-}
-
-.register-button a::after{
-  content: " ";
-  width: 60px;
-  height: 4px;
-  background: rgb(192, 57, 43);
-  background: linear-gradient(118deg, rgba(192, 57, 43, 1) 0%, rgba(168, 62, 106, 1) 32%, rgba(142, 68, 173, 1) 100%);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  border-radius: 1px;
-  transition: 0.5s ease-in-out;
-}
-
-.register-button a:hover::after{
-  width: 100px;
 }
 
 .container-login {
@@ -343,7 +329,7 @@ input.password{
   border: none;
 }
 
-.register form, .new-discipline form, .create-class form{
+.register form, .new-discipline form, .create-class form {
   display: flex;
   justify-content: center;
   flex-direction: column;
