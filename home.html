@@ -1,21 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="styles.css" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-  <script src="scripts.js" ></script>
+  <link href="home.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
 </head>
-
 <body>
-  <div class="header">
+  <header class="header">
     <div class="logo" id="logo" onclick="logoLink()"></div>
+
     <div class="div-menu-header">
       <ul class="menu-header">
         <li><a href="about.html">Sobre</a></li>
@@ -27,30 +23,39 @@
         <a href="login.html">Login</a>
       </button>
     </div>
+  
+  </header>
 
-  </div>
-  <div class="container">
-    <div class="div-texts-home">
-      <div class="text-1-home">Faça a sua</div>
-      <div class="text-2-home">presença!</div>
-      <div class="text-3-home">Com apenas um clique você pode computar sua presença</div>
-      <div class="div-register-button">
-        <div class="register-button">
-          <a href="register.html">Cadastre-se</a>
+
+  <main class="container-home">
+    <div class="container">
+      <div class="div-people-home">
+        <div class="people-home"></div>
+      </div>
+      <div class="div-texts-home">
+        <div class="text-1-home">Faça a sua</div>
+        <div class="text-2-home">presença!</div>
+        <div class="text-3-home">Com apenas um clique, você pode computar sua presença</div>
+        <div class="div-register-button">
+          <div class="register-button">
+            <a href="register.html">Cadastre-se</a>
+          </div>
         </div>
       </div>
-
-    </div>
-    <div class="div-people-home">
-      <div class="people-home"></div>
     </div>
 
-  </div>
+    <div class="container-about">    
+      <div class="about">Sobre</div> 
+    </div>
 
+    <div class="container-contact">    
+      <div class="contact">Contato</div> 
+    </div>
+  </main>
 
+  
 
-
-
+  
+  
 </body>
-
 </html>

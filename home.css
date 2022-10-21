@@ -1,0 +1,198 @@
+.container-home {
+  background: rgb(22,24,38);
+  background: linear-gradient(150deg, rgba(22,24,38,1) 22%, rgba(61,31,77,1) 86%, rgba(82,43,105,1) 97%, rgba(112,59,143,1) 100%);
+  height: 270vh;
+  width: 100vw;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+}
+
+.div-people-home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.people-home {
+  background: url("images/people-home-mobile.png") no-repeat;
+  height: 355px;
+  width: 360px;
+  margin-left: -20px;
+}
+
+.div-texts-home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-1-home {
+  color: #fff;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.text-2-home {
+  background-clip: text;
+  -webkit-background-clip: text;  
+  background-image: linear-gradient(118deg, rgba(192, 57, 43, 1) 0%, rgba(168, 62, 106, 1) 32%, rgba(142, 68, 173, 1) 100%);
+  color: transparent;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.text-3-home {
+  font-weight: 300;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+}
+
+.div-register-button {
+  margin: 20px 0 15px 0;
+}
+
+.register-button {
+  height: 55px;
+  width: 200px;      
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+  border: solid 3px transparent;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(118deg, rgba(192, 57, 43, 1) 0%, rgba(168, 62, 106, 1) 32%, rgba(142, 68, 173, 1) 100%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px rgba(22,24,38,1) inset;
+  border-radius: 10px;
+}
+
+.register-button a{  
+  font-weight: 300;
+  font-size: 16px;
+  position: relative;  
+  color: #fff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+}
+
+.register-button:hover {
+  box-shadow: none;
+  background: linear-gradient(118deg, rgba(192, 57, 43, 1) 0%, rgba(168, 62, 106, 1) 32%, rgba(142, 68, 173, 1) 100%);
+  cursor: pointer;
+  border-left: 3px solid rgba(192, 57, 43, 1);
+  border-right: 3px solid rgba(142, 68, 173, 1);
+  transition: 0.2s ease-in-out;
+}
+
+.container-about{
+  font-size: 60px;
+  color: #fff;
+  height: 900px;
+  display: flex;
+  justify-content: center;
+}
+
+.container-about:before {
+  content: '';
+  position: absolute;
+  left: 5%;
+  width: calc(100% - 10%);
+  height: 1px;
+  background-image: url("images/line.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.about {
+  margin-top: 300px;
+}
+
+.container-contact{
+  font-size: 30px;
+  color: #fff;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.container-contact:before {
+  content: '';
+  position: absolute;
+  left: 5%;
+  width: calc(100% - 10%);
+  height: 1px;
+  background-image: url("images/line.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.contact {
+  margin-top: 40px;
+}
+
+@media (min-width: 64em) {
+  .container{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+ 
+  .people-home {
+    background: url("images/people-home.png") no-repeat;
+    height: 480px;
+    width: 630px;
+    margin-left: -100px;
+    margin-bottom: 30px;
+  }
+  
+  .div-texts-home {
+    width: 50%;
+    height: 100%;
+    margin: 100px 0px 50px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .text-1-home {
+    color: #fff;
+    font-weight: 400;
+    font-size: 60px;
+  }
+  
+  .text-2-home {
+    background-clip: text;
+    -webkit-background-clip: text;  
+    background-image: linear-gradient(118deg, rgba(192, 57, 43, 1) 0%, rgba(168, 62, 106, 1) 32%, rgba(142, 68, 173, 1) 100%);
+    color: transparent;
+    font-weight: 400;
+    font-size: 60px;
+  }
+  
+  .text-3-home {
+    font-weight: 400;
+    font-size: 22px;
+    color: #fff;
+    text-align: left;
+    width: 70%;
+  }
+  
+  .div-register-button {
+    margin: 40px 0 0 40px;
+  }
+  
+  .register-button a{  
+    font-weight: 400;
+    font-size: 22px;
+  }
+
+}
