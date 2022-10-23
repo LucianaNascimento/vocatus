@@ -5,13 +5,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">  
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="styles.css" rel="stylesheet">  
-  <script src="scripts.js"></script>
+  <link href="../styles.css" rel="stylesheet">
+  <link href="../css/confirm-presence.css" rel="stylesheet">
+  <script src="../scripts.js"></script>
   <title>Presença</title>
 </head>
 
 <body class="principal">
-  <div class="header-principal">
+  <header class="header-presence">
     <div class="logo" id="logo" onclick="logoLink()"></div>
     <!-- <div class="div-menu-header">
           <ul class="menu-header">
@@ -23,14 +24,20 @@
       <div class="profile"></div>
     </div>
 
-  </div>
+  </header>
 
-  <div class="container-discipline">
+  <main class="container-presence">
+
+    <h3>Insira o código da aula</h3>
+    <form class="form-confirm-presence">
+      <input  type="text" id="insert-code">
+      <button class="ok-confirme-presence" id="ok-confirme-presence" type="submit" onclick="confirmarPresença()">OK</button>
+    </form>
 
 
+  </main>
 
-  </div>
+
 
 </body>
-
 </html>

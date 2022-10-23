@@ -5,7 +5,7 @@
   width: 100vw;
 }
 
-.container{
+.container {
   display: flex;
   flex-direction: column;
 }
@@ -17,7 +17,7 @@
 }
 
 .people-home {
-  background: url("images/people-home-mobile.png") no-repeat;
+  background: url("../assets/people-home-mobile.png") no-repeat;
   height: 355px;
   width: 360px;
   margin-left: -20px;
@@ -105,7 +105,7 @@
   left: 5%;
   width: calc(100% - 10%);
   height: 1px;
-  background-image: url("images/line.png");
+  background-image: url("../assets/line.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -129,7 +129,7 @@
   left: 5%;
   width: calc(100% - 10%);
   height: 1px;
-  background-image: url("images/line.png");
+  background-image: url("../assets/line.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -147,7 +147,7 @@
   }
  
   .people-home {
-    background: url("images/people-home.png") no-repeat;
+    background: url("../assets/people-home.png") no-repeat;
     height: 480px;
     width: 630px;
     margin-left: -100px;
